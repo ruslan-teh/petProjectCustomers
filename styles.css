@@ -1,0 +1,362 @@
+/* Загальні стилі */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fc;
+    color: #333;
+  }
+  .dashboardImg {
+    height: 37px;
+    width: 37px;
+    margin: 0px 15px;
+  }
+  .dashboardImgBox {
+    display: flex;
+    align-items: center;
+  }
+  .dashboard {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Сайдбар */
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    text-align: justify;
+  }
+  .menu-toggle {
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .menu li {
+    display: flex;
+    margin: 15px 0;
+    justify-content: flex-start;
+    color: #333;
+    border-radius: 8px;
+  }
+
+  .menu li img:last-child{
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .menu li img:first-child{
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    color: #9197B3;
+  }
+  
+  .menu li.active,
+  .menu li:hover {
+    transition: background-color 0.3s;
+    background-color: #5932EA;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .profile p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .profile span {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  header h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .customers h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .customers a.active {
+    font-size: 16px;
+    color: #16C098;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .customers {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .customersHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .customersHeader div{
+    margin: 0 15px 0 15px;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 216px; 
+    height: 39px; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: #f9fbff; 
+    padding: 0 10px; 
+    box-sizing: border-box;
+  }
+  
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  .search-input {
+    border: none; 
+    outline: none; 
+    flex-grow: 1;
+    font-size: 14px; 
+    color: #7d7d7d; 
+    background: none;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  tbody td {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .status.active {
+    color: #27ae60;
+    background-color: #eafaf1;
+  }
+  
+  .status.inactive {
+    color: #e74c3c;
+    background-color: #fdecea;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .pagination nav a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    color: #333;
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination nav a:hover {
+    background-color: #e7e7ff;
+    color: #5d5fef;
+  }
+  
+  .pagination nav a.active {
+    background-color: #5d5fef;
+    color: #fff;
+  }
+  
+
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+    }
+    .dashboardImgBox{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  
+    .sidebar {
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 10px;
+      box-shadow: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .sidebar h1 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .menu {
+      flex-direction: column;
+      gap: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0;
+    }
+    .active{
+      display: none;
+    }
+  
+    .menu li {
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    .menu li a {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  
+    .profile {
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
+    }
+  
+    .profile img {
+      margin-bottom: 5px;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  
+    header h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .customers h3 {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .customers a.active {
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+    }
+  
+    .table-container {
+      overflow-x: auto;
+    }
+  
+    table {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    thead th, tbody td {
+      padding: 10px;
+    }
+  
+    .pagination {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .pagination span {
+      text-align: center;
+    }
+  
+    .pagination nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .pagination nav a {
+      font-size: 12px;
+      padding: 6px 8px;
+      margin: 2px;
+    }
+  }

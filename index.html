@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="dashboardImgBox">
+          <img class="dashboardImg" src="./img/setting 1.svg" alt="">
+          <h1>Dashboard</h1>
+          <div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+              ☰
+            </button>
+          </div>
+        </div>
+        <ul class="menu active">
+          <li>
+            <img src="./img/key-square.svg" alt="key-square">
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <img src="./img/3d-square 1.svg" alt="3d-square">
+            <a href="#">Product</a>
+            <img src="./img/chevron-right 2.svg" alt="chevron-right">
+          </li>
+          <li class="active">
+            <img src="./img/user-square 1.svg" alt="user-square">
+            <a href="#">Customers</a>
+            <img src="./img/chevron-right 2.svg" alt="chevron-right">
+          </li>
+          <li>
+            <img src="./img/wallet-money 2.svg" alt="wallet-money">
+            <a href="#">Income</a>
+            <img src="./img/chevron-right 2.svg" alt="chevron-right">
+          </li>
+          <li>
+            <img src="./img/discount-shape 1.svg" alt="discount-shape">
+            <a href="#">Promote</a><img src="./img/chevron-right 2.svg" alt="chevron-right">
+          </li>
+          <li>
+            <img src="./img/message-question 1.svg" alt="message-question">
+            <a href="#">Help</a>
+            <img src="./img/chevron-right 2.svg" alt="chevron-right">
+          </li>
+        </ul>
+        <footer class="profile">
+          <img src="./img/Ellipse 8.svg" alt="Evano">
+          <div>
+            <p>Evano</p>
+            <span>Project Manager</span>
+          </div>
+        </footer>
+      </aside>
+
+      <main class="content">
+        <header>
+          <h2>Hello Evano 👋</h2>
+        </header>
+        <section class="customers">
+          <div class="customersHeader">
+            <div>
+              <h3>All Customers</h3>
+              <a href="#" class="active">Active Members</a>
+            </div>
+            <div class="search-container">
+              <img src="./img/search 1.svg" alt="Search" class="search-icon">
+              <input type="text" placeholder="Search" class="search-input">
+            </div>
+          </div>
+          <div class="table-container">
+            <table id="customersTable">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+            <div class="pagination">
+              <span>Showing data 1 to 8 of 256K entries</span>
+              <nav>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">…</a>
+                <a href="#">40</a>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+
+</html>
